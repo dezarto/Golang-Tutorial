@@ -75,7 +75,7 @@ func main() {
 	app := fiber.New()
 
 	app.Get("/api/data", func(c *fiber.Ctx) error {
-		apiURL := "https://api.thingspeak.com/channels/2578919/feeds.json?api_key=18J81HFG0751ONGI&results=20" // Gerçek API URL'si ile değiştirin
+		apiURL := "https://api.thingspeak.com/channels/2578919/feeds.json?api_key=18J81HFG0751ONGI&results=20" // API URL'si
 
 		data, err := fetchAPIData(apiURL)
 		if err != nil {
